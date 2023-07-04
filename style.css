@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -57,6 +61,10 @@ button:active {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.no-cursor {
+  cursor: no-drop;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------- */
@@ -147,7 +155,7 @@ header {
 
 .header__button {
   background-color: #7342d6;
-  color: white;
+  color: #ffffff;
   padding: 12px 24px;
   font-size: 20px;
   border-radius: 4px;
@@ -236,7 +244,120 @@ header {
 /* features section */
 
 #featured {
+  padding-top: 8vw;
   background-color: rgba(115, 66, 214, 0.1);
-  height: 100vh;
 }
 
+.books {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book {
+  width: 25%;
+  padding: 24px;
+}
+
+.book__img--wrapper {
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+}
+
+.book__img {
+  width: 100%;
+  max-height: 370px;
+  transition: all 300ms ease;
+  cursor: no-drop;
+}
+
+.book:hover .book__img {
+  transform: scale(1.03);
+}
+
+.book__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.book:hover .book__title {
+  text-decoration: underline;
+  cursor: no-drop;
+}
+
+.book__rating {
+  margin-bottom: 8px;
+  color: #fabf2a;
+}
+
+.book__price--normal {
+  text-decoration: line-through;
+  padding-right: 6px;
+  color: #bfbfbf;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* explore section */
+
+#explore {
+  background-color: rgba(115, 66, 214, 0.1);
+}
+
+.explore__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore__button {
+  background-color: #7342d6;
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 24px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* footer section */
+
+footer {
+  background-color: #242424;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__logo--img {
+  width: 160px;
+  filter: invert() grayscale();
+}
+
+.footer__link,
+.footer__copyright {
+  color: #ffffff;
+}
+
+.footer__list {
+  margin: 20px 0px 24px 0px;
+}
+
+.footer__link {
+  padding: 0px 8px;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
