@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text--purple {
+  color: #7342d6;
+}
+
+h1 {
+  font-size: 56px;
+  color: #7342d6;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.container {
+  padding: 56px 0px;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* landing section */
+
+#landing {
+  min-height: 100vh;
+  background-color: rgba(115, 66, 214, 0.1);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* nav section */
+
+nav {
+  height: 80px;
+  display: flex;
+}
+
+.nav__container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0px 24px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav__logo {
+  width: 160px;
+}
+
+ul {
+  display: flex;
+}
+
+.nav__link {
+  margin-left: 16px;
+  font-size: 20px;
+  color: #7342d6;
+  font-weight: 700;
+  padding: 8px;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.nav__link--primary {
+  border: 2px solid #7342d6;
+  border-radius: 4px;
+}
+
+.nav__link--primary:hover {
+  text-decoration: none;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* header section */
+
+header {
+  min-height: calc(100vh - 80px);
+}
+
+.header__container {
+  width: 100%;
+  max-width: 720px;
+  min-height: calc(100vh - 80px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header__img--wrapper {
+  padding: 24px;
+  z-index: 2;
+}
+
+.header__img {
+  width: 100%;
+  height: 100%;
+  max-height: 50vh;
+}
+
+.header__button {
+  background-color: #7342d6;
+  color: white;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 24px;
+}
+
+.header__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* highlights section */
+
+.highlights__wrapper {
+  display: flex;
+}
+
+.highlight {
+  padding: 0px 24px;
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight__img {
+  color: #7342d6;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #7342d68f;
+  border-radius: 4px;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.highlight__subtitle {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.highlight__para {
+  text-align: center;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* waves */
+
+#highlights {
+  position: relative;
+}
+
+#highlights:before,
+#highlights:after {
+  background: url(assets/wave.svg);
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 101vw;
+  height: 12vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+#highlights:before {
+  top: 1px;
+  transform: translateY(-100%);
+}
+
+#highlights:after {
+  bottom: 1px;
+  transform: translateY(100%) rotate(180deg);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* features section */
+
+#featured {
+  background-color: rgba(115, 66, 214, 0.1);
+  height: 100vh;
+}
+
