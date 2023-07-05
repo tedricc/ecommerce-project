@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -25,11 +26,41 @@
               <a href="" class="nav__link no-cursor">Contact</a>
             </li>
             <li>
-              <a href="#featured" class="nav__link nav__link--primary"
-                >Books</a
-              >
+              <a href="#featured" class="nav__link nav__link--primary">Books</a>
             </li>
           </ul>
+
+          <button class="nav__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="nav__menu--backdrop">
+            <button class="nav__menu nav__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="nav__menu--links">
+              <li class="nav__menu--list">
+                <a href="#" class="nav__menu--link" onclick="closeMenu()"
+                  >Home</a
+                >
+              </li>
+              <li class="nav__menu--list">
+                <a
+                  href="#featured"
+                  class="nav__menu--link"
+                  onclick="closeMenu()"
+                  >Books</a
+                >
+              </li>
+              <li class="nav__menu--list">
+                <a
+                  href="#"
+                  class="nav__menu--link no-cursor"
+                  onclick="closeMenu()"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <header>
@@ -65,7 +96,7 @@
                 </div>
                 <h3 class="highlight__subtitle">Easy and quick</h3>
                 <p class="highlight__para">
-                  Get access to your purchased books instantly
+                  Get access instantly
                 </p>
               </div>
               <div class="highlight">
@@ -80,7 +111,7 @@
                   <i class="fas fa-tags"></i>
                 </div>
                 <h3 class="highlight__subtitle">Affordable</h3>
-                <p class="highlight__para">Popular books for as low as $10</p>
+                <p class="highlight__para">Lowest prices in the country</p>
               </div>
             </div>
           </div>
